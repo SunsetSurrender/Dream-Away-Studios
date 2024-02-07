@@ -1,0 +1,473 @@
+/*Universal Styles*/
+html{
+    font-size: 16px;
+}
+
+*{
+    font-family: "lato", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ec2868;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ec2868;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+   
+    color: #B7B8BC;
+}
+
+p {
+    color: #B7B8BC;
+    padding-top: 10px;
+}
+
+body{
+    background-color: #003366;
+    color: #3ab7a6;
+     
+}
+
+header, nav, footer {
+    background-color: rgba(40, 43, 55, 1);
+    color: #FFF8E7;
+}
+
+/*header*/
+
+nav{    
+    height: 80px;
+   /* position: fixed;*/
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #282B37; 
+}
+
+img.logo {
+    height: 120px; 
+    width: 150px; 
+    margin-left: 30px; 
+}
+
+.links{
+    margin-right: 40px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    padding: 15px; 
+}
+
+a.button {
+    background-color: #ec2868; 
+    border-radius: 30px;
+    
+}
+
+/*banner*/
+
+header{ 
+   height: 400px; 
+   display: flex; 
+   align-content: center;
+   justify-content: flex-start;
+}
+
+.banner{
+   display: flex; 
+   background-image: url("../Resources/Media/banner.jpg");
+   height:100%; 
+   width:100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   align-content: center;
+}
+
+#mission {
+    margin: 0 30px; 
+    text-align:left;
+    align-self: center; 
+    font-size: 3rem; 
+    color: #ec2868; 
+    text-shadow: 1px 1px 2px #FFF8E7;
+    
+}
+
+/*services*/
+
+.services {
+    text-align: center;
+    margin: 70px 45px 40px 45px; 
+    
+}
+
+.services-container{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    margin: 30px 30px 15px 30px ; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service{
+    display:flex; 
+    height: 400px;
+    max-height: 500px; 
+    width: 250px; 
+    max-width: 350px;
+    min-width: 250px;
+    padding: 20px;   
+}
+
+.service:hover{
+    position: relative; 
+    bottom: 15px; 
+    left: 10px; 
+    box-shadow: 5px 3px 30px #ec2868;
+}
+
+.service-description{
+    background-color: rgba(40, 43, 55, .8); 
+    z-index: 5; 
+    align-self: flex-end;
+    margin: 0; 
+    height:25%;
+    padding: 2.5%;
+}
+
+#hservices{
+    padding-bottom: 2%; 
+    color:#ec2868;
+}
+
+h5{
+    text-align: justify;
+    padding-top: 1%; 
+    color:azure;
+}
+
+
+#mixmaster{
+    border: 5px solid rgb(255, 251, 251);
+    background-color: #282B37;
+    padding: 5px; 
+    background-image: url("../Resources/Media/mix-master.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    flex-grow:1;
+}
+
+#composition{
+    border: 5px solid rgb(255, 251, 251);
+    background-color: #282B37;
+    padding: 5px; 
+    background-image: url("../Resources/Media/composition.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1; 
+}
+
+#sound-design {
+    border: 5px solid rgb(255, 251, 251);
+    background-color: #282B37;
+    padding: 5px; 
+    background-image: url("../Resources/Media/Sound\ design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1; 
+
+}
+
+
+/*about*/
+
+.about{
+    text-align: center;
+    margin-top: 15px; 
+    margin-bottom: 30px; 
+}
+
+.about-txt {
+    margin-bottom: 60px; 
+}
+
+.bgbanner{
+    background-image: url("../Resources/Media/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px; 
+    
+}
+.team-photos {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 15px; 
+    min-height: inherit;
+    
+}
+
+.photo {
+    display: flex;
+    align-self: center;
+    flex-grow: 1;
+    max-width: 250px; 
+    min-height: 500px;
+    margin:  0 10px;
+    flex-shrink:1;  
+}
+
+.photo:hover {
+    position: relative; 
+    bottom: 13px; 
+    left: 10px; 
+    box-shadow: 5px 3px 30px #ec2868;
+}
+
+.photo-description {
+    background-color: rgba(40, 43, 55, .8); 
+    z-index: 5; 
+    align-self: end;
+    height: 40px; 
+    width: 100%;
+}
+
+#photo1 {
+    border: 1px solid rgb(255, 251, 251);
+    background-image: url("../Resources/Media/ss1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4px; 
+}
+#photo2 {
+    border: 1px solid rgb(255, 251, 251);
+    background-image: url("../Resources/Media/ss2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4px; 
+}
+#photo3 {
+    border: 1px solid rgb(255, 251, 251);
+    background-image: url("../Resources/Media/ss3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px; 
+    padding: 4px; 
+    
+}
+#photo4 {
+    border: 1px solid rgb(255, 251, 251);
+    background-image: url("../Resources/Media/ss4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4px; 
+}
+#photo5 {
+    border: 1px solid rgb(255, 251, 251);
+    background-image: url("../Resources/Media/ss5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4px; 
+}
+
+/*contact*/
+
+.contacts{
+    margin-top: 60px; 
+    height: 300px; 
+    width: 100%;
+    background-image: url("../Resources/Media/Palms\ 1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px; 
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contact-info { 
+    background-color: rgba(40, 43, 55, .8); 
+    min-width:40%;
+    height:55%;
+    display:flex; 
+    justify-content: center;
+    align-self: center;   
+}
+
+#contactcontainer{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h5 a, #phone, #mail{
+    color: azure;
+    text-decoration:none;
+    text-align: center;
+    font-size: 1.2rem; 
+    align-self: center;
+    line-height: 1.5rem;
+}
+
+#contacts{
+
+    text-align: center;
+    align-self: top;
+    justify-self: center; 
+    padding-bottom: 30px; 
+    text-shadow: 1px 1px 3px #FFF8E7;
+    text-transform: uppercase;
+}
+
+/* Icons */
+
+.smicons{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-top: -40px; 
+    margin-bottom: 15px; 
+}
+
+#ig{
+   background-image: url("../Resources/Media/ig.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#fb{
+    background-image: url("../Resources/Media/fb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+#x{
+    background-image: url("../Resources/Media/x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#yt {
+    background-image: url("../Resources/Media/yt.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+/*footer*/
+
+footer{
+    height:70px; 
+    text-align: center;
+    width:auto;
+    display:flex; 
+    justify-content:center; 
+    align-items: center;
+    font-size: .82rem;
+}
+
+/*media queries*/
+
+/* Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+   
+    .team-photos .photo {
+      width: 250px; 
+      margin-bottom: 20px; 
+      display: block; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    #photo3{
+        max-width: 250px !important;
+    }
+    .services .service-item {
+      margin: 5px; 
+      display: block; 
+    }
+
+    .service{
+        margin: 10px 0; 
+    }
+    
+   .photo-description{
+    align-items: end;
+   }
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .content-section {
+      padding: 20px;
+    }
+  
+    h1, h2, h3, p  {
+      font-size: 1rem; 
+    }
+
+    #mission {
+        font-size: 2.5rem; 
+    }
+   
+  }
+  
+  /* Mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+
+    .content-section {
+      padding: 15px;
+    }
+  
+    h1, h2, h3, p {
+      font-size: .9rem; 
+    }
+    #mission{
+        font-size: 1.8rem; 
+        text-align: center; 
+    }
+  }
+  
